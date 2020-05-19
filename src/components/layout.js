@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import { MainPage } from "./styled"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -18,6 +19,11 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+            menuLinks {
+              name
+              link
+              description
+            }
         }
       }
     }
@@ -25,13 +31,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header 
+        menuLinks={data.site.siteMetadata.menuLinks}
+        siteTitle={data.site.siteMetadata.title}
+      />
       <div
         style={{
           margin: `0 auto`,
+          // backgroundImage: `url('./images/el-fondo.jpg')`
         }}
       >
-        <main>{children}</main>
+        <MainPage>{children}</MainPage>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

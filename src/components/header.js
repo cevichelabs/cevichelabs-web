@@ -6,38 +6,81 @@ import styled from "styled-components"
 const HeaderComponent = styled.header`
   background: #223D98;
   display: flex;
+  height: 150px;
+  @media only screen and (max-width: 480px) {
+    height: auto;
+  }
 `;
 
 const HeaderContent = styled.div`
+  align-items: center;
   display: flex;
-  max-width: 960px;
+  flex-basis: 100%;
 `;
 
 const HeaderTitle = styled.h1`
   margin: 10px;
+  span {
+    text-indent: -9999px;
+  }
 `;
 
 const HeaderSlogan = styled.h2`
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   display: flex;
-  width: 90px;
-  margin-top: 10px;
-  margin-left: auto;
+  margin: 25px 0 30px auto;
   font-family: 'Asap', sans-serif;
+  width: 110px;
+  padding-right: 20px;
 `;
+
+const HeaderMenu = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1em;
+  line-height: 1em;
+  flex-basis: 100%;
+  a {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }  
+`;
+
+const HeaderMenuItem = styled.big`
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  justify-content: center;
+`;
+
+const HeaderMenuDescription = styled.small`
+  font-size: 0.75em;
+`
 
 const MainMenu = styled.div`
   background-color: #253672;
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.260864' y1='1.77905' x2='21.1304' y2='1.77905' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3Cline x1='0.260864' y1='10.4697' x2='21.1304' y2='10.4697' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3Cline x1='0.260864' y1='19.1602' x2='21.1304' y2='19.1602' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 8px;
-  width: 40px;
+  width: 50px;
   height: 50px;
+  display: none;
+  @media only screen and (max-width: 480px) {
+    display: block;
+  }
 `;
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, menuLinks }) => (
   <HeaderComponent>
     <HeaderContent>
       <HeaderTitle>
@@ -56,6 +99,16 @@ const Header = ({ siteTitle }) => (
 
         </Link>
       </HeaderTitle>
+      <HeaderMenu>
+        {menuLinks.map((item) => {
+          return (
+            <Link to={item.link} key={item.name}>
+              <HeaderMenuItem>{item.name}</HeaderMenuItem>
+              <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
+            </Link>
+          )
+        })}
+      </HeaderMenu>
       <HeaderSlogan>
         .Laboratorio de soluciones digitales
       </HeaderSlogan>
@@ -66,10 +119,12 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  siteMenu: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  siteMenu: ``,
 }
 
 export default Header

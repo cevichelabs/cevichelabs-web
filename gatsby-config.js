@@ -3,6 +3,28 @@ module.exports = {
     title: `CevicheLabs Web`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@renaco`,
+    menuLinks: [
+      {
+        name: "METODOLOGÍA",
+        description: "Cómo lo que hacemos",
+        link: '/metodologia',
+      },
+      {
+        name: "SOLUCIONES",
+        description: "Qué es lo que hacemos",
+        link: '/soluciones',
+      },
+      {
+        name: "PLANES",
+        description: "En qué te ayudamos",
+        link: '/planes',
+      },
+      {
+        name: "EXPERIENCIA",
+        description: "Cómo te ayudamos",
+        link: '/experiencia',
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,10 +59,10 @@ module.exports = {
             family: `Archivo Black`,
             variants: [`normal`]
           },
-          // {
-          //   family: `BenchNine`,
-          //   variants: [`600`]
-          // },
+          {
+            family: `BenchNine`,
+            variants: [`normal`]
+          }
         ]
       }
     },

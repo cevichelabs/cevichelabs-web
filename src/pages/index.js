@@ -4,13 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { TitleStyled, Hero } from "../components/styled"
+import { MainTitle, Hero } from "../components/styled"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero>
-      <TitleStyled>CONSULTORÍA EN MARKETING DIGITAL, BRANDING Y BUSINESS INTELLIGENCE</TitleStyled>
+      <MainTitle>CONSULTORÍA EN MARKETING DIGITAL, BRANDING Y BUSINESS INTELLIGENCE</MainTitle>
     </Hero>
     <Image />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
