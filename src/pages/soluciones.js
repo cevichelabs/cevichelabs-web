@@ -5,6 +5,7 @@ import {
   ItemSolution,
   ContainImage,
   SubTitleSection,
+  SubTitleStyled,
   ImageSolution,
   ParagraphStyled,
   ImageSectionSolution
@@ -97,15 +98,15 @@ const SolutionsPage = () => (
             Photo by Curtis Macnewton on Unsplash
           </ImageSectionSolution>
         </Col>
-        <Col size={1}>
-          <SubTitleSection>ESTRATEGIA DIGITAL</SubTitleSection>
-          <ParagraphStyled>Nuestra experiencia puede ayudarte a planificar tu marca para que puedas hablar en medios digitales, desde hacer un análisis, hasta desarrollar un control de mando tocando todos los puntos de contacto de tu audiencia, desarrollando una estrategia que se adapte a la naturaleza de tu marca, aportando valor y proyección a tu negocio.</ParagraphStyled>
+        <Col size={2}>
+          <SubTitleStyled>ESTRATEGIA DIGITAL</SubTitleStyled>
+          <ParagraphStyled align={'left'}>Nuestra experiencia puede ayudarte a planificar tu marca para que puedas hablar en medios digitales, desde hacer un análisis, hasta desarrollar un control de mando tocando todos los puntos de contacto de tu audiencia, desarrollando una estrategia que se adapte a la naturaleza de tu marca, aportando valor y proyección a tu negocio.</ParagraphStyled>
         </Col>
       </Row>
       <Row>
-        <Col size={1}>
-          <SubTitleSection>BRANDING DIGITAL</SubTitleSection>
-          <ParagraphStyled>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
+        <Col size={2}>
+          <SubTitleStyled>BRANDING DIGITAL</SubTitleStyled>
+          <ParagraphStyled align={'left'}>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
         </Col>
         <Col size={2}>
           <ImageSolution
@@ -131,15 +132,15 @@ const SolutionsPage = () => (
             Photo by Med Bard on Unsplash
           </ImageSectionSolution>
         </Col>
-        <Col size={1}>
-          <SubTitleSection>DESARROLLO DE PRODUCTO</SubTitleSection>
-          <ParagraphStyled>Si piensas en desarrollar algún producto digital para tu emprendimiento, website, ecommerce, emailing, social media, medios etc, te ayudamos a identificar el tipo de solución que necesites, desde la etapa de clarificar una idea, el prototipo, el diseño de interfaz, desarrollo, hasta el testing y entrega de producto, liderando todas las etapas.</ParagraphStyled>
+        <Col size={2}>
+          <SubTitleStyled>DESARROLLO DE PRODUCTO</SubTitleStyled>
+          <ParagraphStyled align={'left'}>Si piensas en desarrollar algún producto digital para tu emprendimiento, website, ecommerce, emailing, social media, medios etc, te ayudamos a identificar el tipo de solución que necesites, desde la etapa de clarificar una idea, el prototipo, el diseño de interfaz, desarrollo, hasta el testing y entrega de producto, liderando todas las etapas.</ParagraphStyled>
         </Col>
       </Row>
       <Row>
-        <Col size={1}>
-          <SubTitleSection>MARKETING DE CONTENIDOS</SubTitleSection>
-          <ParagraphStyled>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
+        <Col size={2}>
+          <SubTitleStyled>MARKETING DE CONTENIDOS</SubTitleStyled>
+          <ParagraphStyled align={'left'}>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
         </Col>
         <Col size={2}>
           <ImageSolution
@@ -155,7 +156,7 @@ const SolutionsPage = () => (
       </Row>
     </Grid>
 
-    <Link to="/">Home</Link>
+    {/* <Link to="/">Home</Link> */}
   </Layout>
 )
 

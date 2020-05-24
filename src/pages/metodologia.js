@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { 
-  TitleStyled, 
-  ParagraphStyled, 
+  TitleStyled,
+  SubTitleStyled,
+  ParagraphStyled,
   ImageSolution 
 } from "../components/styled"
 import metodologia from "./../images/metodologia.svg"
@@ -22,11 +23,11 @@ const MethodologyPage = () => (
       </Col>
 
       <Col size={1}>
-        <h2>GROWTH HACKING</h2>
-        <ParagraphStyled>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growht Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
+        <SubTitleStyled>GROWTH HACKING</SubTitleStyled>
+        <ParagraphStyled align={'left'}>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growht Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
       </Col>
     </Row>
-    <Link to="/">Home</Link>
+    {/* <Link to="/">Home</Link> */}
   </Layout>
 )
 

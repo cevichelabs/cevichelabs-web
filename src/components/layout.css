@@ -619,3 +619,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: #f24;
+}
+
+::selection {
+  color: #ffffff;
+  background: #f24;
+}

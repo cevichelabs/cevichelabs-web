@@ -15,7 +15,7 @@ const IndexPage = () => (
     <Image />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div> */}
-    <Link to="/metodologia/">Metodología</Link>
+    {/* <Link to="/metodologia/">Metodología</Link> */}
   </Layout>
 )
 

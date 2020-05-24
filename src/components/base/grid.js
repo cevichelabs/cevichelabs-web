@@ -18,6 +18,7 @@ const media = {
 
 export const Col = styled.div`
   flex: ${(props) => props.size};
+  flex-basis: 100%;
   ${(props) => props.collapse && media[props.collapse](`
     display: none;
   `)}

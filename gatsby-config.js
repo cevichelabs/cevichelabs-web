@@ -62,6 +62,10 @@ module.exports = {
           {
             family: `BenchNine`,
             variants: [`normal`]
+          },
+          {
+            family: `Oswald`,
+            variants: [`400`]
           }
         ]
       }
