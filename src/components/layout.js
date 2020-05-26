@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          
             menuLinks {
               name
               link
@@ -35,19 +36,12 @@ const Layout = ({ children }) => {
         menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          // backgroundImage: `url('./images/el-fondo.jpg')`
-        }}
-      >
-        <MainPage>{children}</MainPage>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
-      </div>
+      <MainPage background={'url("./images/el-fondo.jpg")'}>{children}</MainPage>
+      {/* <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer> */}
     </>
   )
 }

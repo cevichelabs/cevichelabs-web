@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,7 +26,6 @@ const MethodologyPage = () => (
         <ParagraphStyled align={'left'}>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growht Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
       </Col>
     </Row>
-    {/* <Link to="/">Home</Link> */}
   </Layout>
 )
 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { 
   TitleStyled,
   ItemSolution,
@@ -28,7 +27,7 @@ const SolutionsPage = () => (
   <Layout>
     <SEO title="Soluciones" />
     <TitleStyled>SOLUCIONES</TitleStyled>
-    <Grid height={'50vh'}>
+    <Grid>
       <Row>
         <Col size={1}>
           <ItemSolution>
@@ -92,7 +91,6 @@ const SolutionsPage = () => (
             alt='Contenidos' 
             src={EstrategiaDigital} 
             width={'834px'}
-            height={'557px'}
           />
           <ImageSectionSolution align={'left'}>
             Photo by Curtis Macnewton on Unsplash
@@ -113,7 +111,6 @@ const SolutionsPage = () => (
             alt='Contenidos'
             src={BrandingDigital}
             width={'834px'}
-            height={'557px'}
           />
           <ImageSectionSolution align={'right'}>
             Photo by Ben Kolde on Unsplash
@@ -126,7 +123,6 @@ const SolutionsPage = () => (
             alt='Contenidos'
             src={DesarrolloDeProducto} 
             width={'834px'}
-            height={'557px'}
           />
           <ImageSectionSolution align={'left'}>
             Photo by Med Bard on Unsplash
@@ -147,7 +143,6 @@ const SolutionsPage = () => (
             alt='Contenidos'
             src={MarketingDeContenidos} 
             width={'834px'}
-            height={'557px'}
           />
           <ImageSectionSolution align={'right'}>
           Photo by Ian Schneider on Unsplash
@@ -155,8 +150,6 @@ const SolutionsPage = () => (
         </Col>
       </Row>
     </Grid>
-
-    {/* <Link to="/">Home</Link> */}
   </Layout>
 )
 

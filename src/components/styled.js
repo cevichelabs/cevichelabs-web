@@ -3,10 +3,9 @@ import { colors } from "./constants"
 
 export const MainPage = styled.main`
   text-align: center;
-  background-image: url('./images/el-fondo.jpg');
+  background-image: ${(props) => props.background};
   height: calc(100vh - 150px);
 `
-
 export const TitleStyled = styled.h2`
   font-family: 'Archivo Black', sans-serif;
   color: ${colors.mainColor};
@@ -25,6 +24,11 @@ export const TitleStyled = styled.h2`
     margin-top: 25px;
     border-bottom: 3px solid ${colors.red};
   }
+  @media (max-width: 1024px) {
+    padding: 35px 0 15px;
+    font-size: 25px;
+    line-height: 30px;
+  }
 `
 
 export const TitleMinorStyled = styled(TitleStyled)`
@@ -35,13 +39,18 @@ export const MainTitle = styled(TitleStyled)`
   position: absolute;
   z-index: 1;
   color: ${colors.white};
-  width: 1024px;
+  width: 100%;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    padding: 20px 10px;
+  }
 `
 
 export const SubTitleStyled = styled(TitleStyled)`
   font-family: 'BenchNine', sans-serif;
   justify-content: left;
   margin: 0 auto 20px;
+  padding: 0;
   width: 75%;
   font-size: 30px;
   color: ${colors.grayOne};
@@ -61,6 +70,10 @@ export const ParagraphStyled = styled.p`
   margin: auto;
   text-align: ${(props) => props.align};
   color: ${colors.grayOne};
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `
 
 export const ParagraphContentStyled = styled(ParagraphStyled)`
@@ -72,14 +85,20 @@ export const ParagraphContentStyled = styled(ParagraphStyled)`
 `;
 
 export const Hero = styled.div`
-  background-image: url('./images/hero-background.jpg');
-  width: 1024px;
   height: 100vh;
   top: 50%;
-  margin-top: -30vh;
+  margin-top: -25vh;
   position: absolute;
   left: 50%;
-  margin-left: -512px;
+  @media only screen and (max-width: 1024px) {
+    margin-top: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 480px) {
+    margin-top: 90px;
+  }
 `
 
 export const ButtonDown = styled.button`
@@ -152,6 +171,9 @@ export const ItemsPackage = styled.ul`
   margin: 0;
   padding: 0;
   min-height: 350px;
+  @media (max-width: 1024px) {
+    min-height: auto;
+  }
 `
 
 export const ItemPackage = styled.li`
@@ -180,5 +202,8 @@ export const ButtonStyled = styled.button`
     padding: 10px 30px;
     color: ${colors.white};
     text-decoration: none;
+  }
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 50px;
   }
 `

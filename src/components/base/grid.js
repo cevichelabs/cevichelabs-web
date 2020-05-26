@@ -6,6 +6,9 @@ export const Grid = styled.div`
 
 export const Row = styled.div`
   display: flex;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 const media = {

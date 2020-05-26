@@ -149,7 +149,6 @@ const PlansPage = () => (
       </Col>
     </Row>
   </Grid>
-    {/* <Link to="/">Home</Link> */}
   </Layout>
 )
 
