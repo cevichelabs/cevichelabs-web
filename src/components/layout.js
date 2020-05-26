@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title}
       />
-      <MainPage background={'url("./images/el-fondo.jpg")'}>{children}</MainPage>
+      <MainPage>{children}</MainPage>
       {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
