@@ -64,7 +64,7 @@ const PlansPage = () => (
             'Estrategia / responsive'
         ]
         } />
-        <ButtonPackage  title={'S/ 7.000'} link={'/my-link'} />
+        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>MENÚ INTERMEDIO</SubtitlePackage>
@@ -80,7 +80,7 @@ const PlansPage = () => (
             'Marketing de contenidos'
           ]
         } />
-        <ButtonPackage  title={'S/ 7.000'} link={'/my-link'} />
+        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>MENÚ PERSONALIZADO</SubtitlePackage>
@@ -96,7 +96,7 @@ const PlansPage = () => (
             'Marketing de contenidos / blog'
           ]
         } />
-        <ButtonPackage  title={'S/ 7.000'} link={'/my-link'} />
+        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
       </Col>
     </Row>
   </Grid>

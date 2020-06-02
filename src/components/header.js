@@ -71,7 +71,7 @@ const HeaderSlogan = styled.h2`
 `;
 
 const HeaderMenu = styled.nav`
-  display: ${(props) => props.show ? 'flex' : 'none' };
+  display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 1em;
@@ -86,6 +86,7 @@ const HeaderMenu = styled.nav`
     color: #ffffff;
   }
   @media (max-width: 1024px) {
+    display: ${(props) => props.show ? 'flex' : 'none' };
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -134,10 +135,6 @@ const MainMenu = styled.div`
     top: 4%;
   }
 `;
-
-const MenuAction = (show, setShow) => {
-  console.log('event', show);
-}
 
 const Header = ({ siteTitle, menuLinks }) => {
   
