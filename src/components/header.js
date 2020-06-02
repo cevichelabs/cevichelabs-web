@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import Logo from "./../images/logo.svg"
+import { colors } from "./constants"
 
 const HeaderComponent = styled.header`
   background: #223D98;
@@ -65,12 +66,12 @@ const HeaderSlogan = styled.h2`
     font-size: 14px;
     margin: 0;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 75px;
   }
 `;
 
 const HeaderMenu = styled.nav`
-  display: flex;
+  display: ${(props) => props.show ? 'flex' : 'none' };
   flex-direction: row;
   justify-content: center;
   font-size: 1em;
@@ -85,10 +86,18 @@ const HeaderMenu = styled.nav`
     color: #ffffff;
   }
   @media (max-width: 1024px) {
-    display: none;
-  }
-  @media only screen and (max-width: 480px) {
-    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+    background-color: ${colors.mainColor};
+    a {
+      margin: 30px 0;
+      flex-basis: 0;
+      padding: 0;
+    }
   }
 `;
 
@@ -119,44 +128,53 @@ const MainMenu = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     margin-right: 10px;
+    position: absolute;
+    z-index: 5;
+    right: 10px;
+    top: 4%;
   }
 `;
 
-
-const MenuAction = (event) => {
-  event = !event;
-  console.log('event', event);
+const MenuAction = (show, setShow) => {
+  console.log('event', show);
 }
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <HeaderComponent>
-    <HeaderContent>
-      <HeaderContentLogo>
-        <HeaderTitle>
-          <Link to="/">
-            <img src={Logo} alt="Cevichelabs" />
-          </Link>
-        </HeaderTitle>
-      </HeaderContentLogo>
-      <HeaderMenu>
-        {menuLinks.map((item) => {
-          return (
-            <Link to={item.link} key={item.name}>
-              <HeaderMenuItem>{item.name}</HeaderMenuItem>
-              <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
+const Header = ({ siteTitle, menuLinks }) => {
+  
+  const [show, setShow] = React.useState(false);
+  
+  return (
+    <HeaderComponent>
+      <HeaderContent>
+        <HeaderContentLogo>
+          <HeaderTitle>
+            <Link to="/">
+              <img src={Logo} alt="CevicheLabs" />
             </Link>
-          )
-        })}
-      </HeaderMenu>
-      <HeaderSlogan>
-        <span>.</span>Laboratorio de soluciones digitales
-      </HeaderSlogan>
-      <MainMenu
-        onClick={MenuAction}
-      />
-    </HeaderContent>
-  </HeaderComponent>
-)
+          </HeaderTitle>
+        </HeaderContentLogo>
+        <HeaderMenu show={show}>
+          {menuLinks.map((item) => {
+            return (
+              <Link to={item.link} key={item.name}>
+                <HeaderMenuItem>{item.name}</HeaderMenuItem>
+                <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
+              </Link>
+            )
+          })}
+        </HeaderMenu>
+        <HeaderSlogan>
+          <span>.</span>Laboratorio de soluciones digitales
+        </HeaderSlogan>
+        <MainMenu
+          show={show}
+          onClick={() => {
+            setShow(!show)
+          }}
+        />
+      </HeaderContent>
+    </HeaderComponent>
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

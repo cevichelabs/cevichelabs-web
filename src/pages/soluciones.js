@@ -145,7 +145,7 @@ const SolutionsPage = () => (
             width={'834px'}
           />
           <ImageSectionSolution align={'right'}>
-          Photo by Ian Schneider on Unsplash
+            Photo by Ian Schneider on Unsplash
           </ImageSectionSolution>
         </Col>
       </Row>

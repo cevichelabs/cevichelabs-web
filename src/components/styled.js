@@ -58,6 +58,9 @@ export const SubTitleStyled = styled(TitleStyled)`
     margin-top: 15px;
     width: 35px;
   }
+  @media only screen and (max-width: 1024px) {
+    padding: 10px 0;
+  }
 `
 
 export const ParagraphStyled = styled.p`
@@ -74,6 +77,9 @@ export const ParagraphStyled = styled.p`
     font-size: 14px;
     line-height: 20px;
   }
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 45px;
+  }
 `
 
 export const ParagraphContentStyled = styled(ParagraphStyled)`
@@ -82,7 +88,7 @@ export const ParagraphContentStyled = styled(ParagraphStyled)`
   text-align: center;
   max-width: 870px;
   margin: auto;
-`;
+`
 
 export const Hero = styled.div`
   height: 100vh;
@@ -173,6 +179,7 @@ export const ItemsPackage = styled.ul`
   min-height: 350px;
   @media (max-width: 1024px) {
     min-height: auto;
+    margin-bottom: 30px;
   }
 `
 
@@ -186,6 +193,9 @@ export const ItemPackage = styled.li`
   text-align: center;
   letter-spacing: -0.02em;
   color: ${colors.grayOne};
+  @media (max-width: 1024px) {
+    line-height: 2.25em;
+  }
 `
 
 export const ButtonStyled = styled.button`
