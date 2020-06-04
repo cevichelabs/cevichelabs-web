@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `CevicheLabs Web`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@renaco`,
+    author: `@cevichelabs`,
     menuLinks: [
       {
         name: "METODOLOGÍA",
@@ -47,6 +47,10 @@ module.exports = {
         theme_color: `#223298`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-61106849-1`
       },
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

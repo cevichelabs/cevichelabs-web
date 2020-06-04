@@ -14,8 +14,9 @@ export const TitleStyled = styled.h2`
   height: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   position: relative;
-  flex-flow: wrap-reverse;
+  flex-flow: wrap;
   &:before {
     content: '';
     position: absolute;
@@ -105,6 +106,14 @@ export const Hero = styled.div`
   @media only screen and (max-width: 480px) {
     margin-top: 90px;
   }
+`
+
+export const MainCredits = styled.div`
+  font-family: Asap;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
 `
 
 export const ButtonDown = styled.button`

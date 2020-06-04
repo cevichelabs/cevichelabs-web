@@ -4,17 +4,22 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { MainTitle, Hero } from "../components/styled"
+import {
+  MainTitle,
+  Hero,
+  MainCredits
+} from "../components/styled"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero>
-      <MainTitle>CONSULTORÍA EN MARKETING DIGITAL, BRANDING Y BUSINESS INTELLIGENCE</MainTitle>
+      <MainTitle>
+        CONSULTORÍA EN MARKETING DIGITAL, BRANDING Y BUSINESS INTELLIGENCE
+        {/* <MainCredits>Photo by Raphael Lovaski on Unsplash</MainCredits> */}
+      </MainTitle>
     </Hero>
     <Image />
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div> */}
   </Layout>
 )
 

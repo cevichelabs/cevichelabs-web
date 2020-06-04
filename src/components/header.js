@@ -48,18 +48,15 @@ const HeaderTitle = styled.h1`
 `;
 
 const HeaderSlogan = styled.h2`
+  align-items: initial;
   color: #ffffff;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
   display: flex;
-  align-items: center;
-  margin: 25px 0 auto 0;
+  margin: 25px 10px auto 0;
   font-family: 'Asap', sans-serif;
-  width: 185px;
-  span {
-    color: red;
-  }
+  width: 200px;
   @media only screen and (max-width: 1024px) {
     width: 90px;
     line-height: 16px;
@@ -69,6 +66,10 @@ const HeaderSlogan = styled.h2`
     margin-right: 75px;
   }
 `;
+
+const HeaderDot = styled.span`
+  color: red
+`
 
 const HeaderMenu = styled.nav`
   display: flex;
@@ -132,7 +133,7 @@ const MainMenu = styled.div`
     position: absolute;
     z-index: 5;
     right: 10px;
-    top: 4%;
+    top: 6%;
   }
 `;
 
@@ -161,7 +162,7 @@ const Header = ({ siteTitle, menuLinks }) => {
           })}
         </HeaderMenu>
         <HeaderSlogan>
-          <span>.</span>Laboratorio de soluciones digitales
+          <HeaderDot>.</HeaderDot>Laboratorio de soluciones digitales
         </HeaderSlogan>
         <MainMenu
           show={show}

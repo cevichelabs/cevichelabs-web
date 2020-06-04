@@ -10,3 +10,5 @@ export const colors = {
 export const FontFamily =  {
   mainFont: "'Archivo Black', sans-serif"
 }
+
+export const ConsultForm = `https://forms.gle/F56XraZeCbHefGFz5`

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   TitleStyled,
   TitleMinorStyled,
@@ -10,6 +9,8 @@ import {
   ItemPackage,
   ButtonStyled
 } from "../components/styled"
+
+import { ConsultForm } from "../components/constants"
 
 import { Grid, Row, Col } from "../components/base/grid"
 
@@ -22,7 +23,7 @@ import OtrasSoluciones from "./../images/otras-soluciones.jpg"
 const ButtonPackage = ({title, link}) => {
   return (
     <ButtonStyled>
-      <Link to={link}>{title}</Link>
+      <a href={link}>{title}</a>
     </ButtonStyled>
   )
 }
@@ -58,13 +59,13 @@ const PlansPage = () => (
             'Máx. 4 pag / 25 productos',
             'Plantilla personalizada',
             'Modulo de administración',
-            'Home/Carrito/Catálogo/Listas',
-            'Pasarella de pago/Certificado SSL',
+            'Home / carrito / catálogo / listas',
+            'Pasarela de pago / Certificado SSL',
             'SEO / Analytics básico',
             'Estrategia / responsive'
         ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>MENÚ INTERMEDIO</SubtitlePackage>
@@ -73,14 +74,14 @@ const PlansPage = () => (
             'Máx. 4 pag / 25 productos',
             'Plantilla personalizada editable',
             'Modulo de administración',
-            'Home/Carrito/Catálogo/Listas',
-            'Pasarella de pago/Certificado SSL',
+            'Home / carrito / catálogo / listas',
+            'Pasarela de pago / Certificado SSL',
             'SEO / Analytics personalizado',
             'Estrategia / copy / responsive / ',
             'Marketing de contenidos'
           ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>MENÚ PERSONALIZADO</SubtitlePackage>
@@ -89,14 +90,14 @@ const PlansPage = () => (
             'Máx. 12 pag / 100 productos',
             'Diseño personalizado / UX-UI',
             'Modulo de administración',
-            'Home/Carrito/Catálogo/Listas',
-            'Pasarella de pago/Certificado SSL',
+            'Home / carrito / catálogo / listas',
+            'Pasarela de pago / Certificado SSL',
             'SEO / Analytics / SEO local',
             'Estrategia / copy / responsive / asesoría',
             'Marketing de contenidos / blog'
           ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
     </Row>
   </Grid>
@@ -118,7 +119,7 @@ const PlansPage = () => (
             'Site intranet'
           ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>EMAIL MARKETING</SubtitlePackage>
@@ -131,7 +132,7 @@ const PlansPage = () => (
             'Newsletters'
           ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>SOCIAL MEDIA</SubtitlePackage>
@@ -145,7 +146,7 @@ const PlansPage = () => (
             'Piezas para RRSS'
           ]
         } />
-        <ButtonPackage  title={'CONSULTAR'} link={'/consultar'} />
+        <ButtonPackage  title={'CONSULTAR'} link={ConsultForm} />
       </Col>
     </Row>
   </Grid>
