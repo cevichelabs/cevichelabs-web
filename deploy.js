@@ -17,16 +17,19 @@ const config = {
     'manifest.webmanifest',
     'consultar/*',
     'experiencia/*',
+    'google-fonts/*',
+    'google-fonts/**/*',
     'metodologia/*',
-    'icons/*',
     'page-data/*',
-    'images/*',
     'planes/*',
-    'static/*',
     'soluciones/*',
+    'icons/*',
+    'images/*',
+    'static/*',
+    'static/**/*',
     '404/'
   ],
-  deleteRemote: true,
+  deleteRemote: false,
   forcePasv: true
 }
 

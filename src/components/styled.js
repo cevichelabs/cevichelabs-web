@@ -10,20 +10,21 @@ export const TitleStyled = styled.h2`
   font-family: 'Archivo Black', sans-serif;
   color: ${colors.mainColor};
   font-size: 68px;
-  padding: 60px 0 85px;
+  padding: 60px 0 10px;
+  margin-bottom: 75px;
   height: auto;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  position: relative;
   flex-flow: wrap;
-  &:before {
-    content: '';
+  position: relative;
+  &:after {
+    content: ' ';
+    display: block;
     position: absolute;
     width: 65px;
-    height: 0;
-    margin-top: 25px;
-    border-bottom: 3px solid ${colors.red};
+    height: 3px;
+    background: ${colors.red};
+    bottom: 0;
   }
   @media (max-width: 1024px) {
     padding: 35px 0 15px;
@@ -51,7 +52,7 @@ export const SubTitleStyled = styled(TitleStyled)`
   font-family: 'BenchNine', sans-serif;
   justify-content: left;
   margin: 0 auto 20px;
-  padding: 0;
+  padding: 0 0 10px;
   width: 75%;
   font-size: 30px;
   color: ${colors.grayOne};
@@ -114,6 +115,9 @@ export const MainCredits = styled.div`
   line-height: 13px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 `
 
 export const ButtonDown = styled.button`

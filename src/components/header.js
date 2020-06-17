@@ -147,7 +147,11 @@ const Header = ({ siteTitle, menuLinks }) => {
         <HeaderContentLogo>
           <HeaderTitle>
             <Link to="/">
-              <img src={Logo} alt="CevicheLabs" />
+              <img 
+                src={Logo}
+                data-src={Logo}
+                alt="CevicheLabs"
+              />
             </Link>
           </HeaderTitle>
         </HeaderContentLogo>

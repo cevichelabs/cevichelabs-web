@@ -35,6 +35,7 @@ const SolutionsPage = () => (
               <ImageSolution 
                 alt="Estrategia" 
                 src={Estrategia} 
+                data-src={Estrategia} 
                 width={'84px'}
                 height={'84px'}
               />
@@ -48,6 +49,7 @@ const SolutionsPage = () => (
               <ImageSolution 
                 alt='Branding' 
                 src={Branding} 
+                data-src={Branding} 
                 width={'84px'}
                 height={'84px'}
               />
@@ -61,6 +63,7 @@ const SolutionsPage = () => (
               <ImageSolution 
                 alt='Productos' 
                 src={Producto} 
+                data-src={Producto} 
                 width={'84px'}
                 height={'84px'}
               />
@@ -74,6 +77,7 @@ const SolutionsPage = () => (
               <ImageSolution 
                 alt='Contenidos' 
                 src={Contenidos} 
+                data-src={Contenidos} 
                 width={'84px'}
                 height={'84px'}
               />
@@ -90,6 +94,7 @@ const SolutionsPage = () => (
           <ImageSolution 
             alt='Contenidos' 
             src={EstrategiaDigital} 
+            data-src={EstrategiaDigital} 
             width={'834px'}
           />
           <ImageSectionSolution align={'left'}>
@@ -110,6 +115,7 @@ const SolutionsPage = () => (
           <ImageSolution
             alt='Contenidos'
             src={BrandingDigital}
+            data-src={BrandingDigital}
             width={'834px'}
           />
           <ImageSectionSolution align={'right'}>
@@ -122,6 +128,7 @@ const SolutionsPage = () => (
           <ImageSolution
             alt='Contenidos'
             src={DesarrolloDeProducto} 
+            data-src={DesarrolloDeProducto} 
             width={'834px'}
           />
           <ImageSectionSolution align={'left'}>
@@ -142,6 +149,7 @@ const SolutionsPage = () => (
           <ImageSolution
             alt='Contenidos'
             src={MarketingDeContenidos} 
+            data-src={MarketingDeContenidos} 
             width={'834px'}
           />
           <ImageSectionSolution align={'right'}>

@@ -50,7 +50,11 @@ const PlansPage = () => (
     <TitleMinorStyled>TIENDA VIRTUAL</TitleMinorStyled>
     <Row>
       <Col sise={1}>
-        <ImageSolution src={TiendaVirtual} alt="" />
+        <ImageSolution 
+          src={TiendaVirtual}
+          data-src={TiendaVirtual}
+          alt=""
+        />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>MENÚ BÁSICO</SubtitlePackage>
@@ -105,7 +109,11 @@ const PlansPage = () => (
     <TitleMinorStyled>OTRAS SOLUCIONES</TitleMinorStyled>
     <Row>
       <Col sise={1}>
-        <ImageSolution src={OtrasSoluciones} alt="" />
+        <ImageSolution 
+          src={OtrasSoluciones}
+          data-src={OtrasSoluciones}
+          alt=""
+        />
       </Col>
       <Col sise={1}>
         <SubtitlePackage>WEBSITES</SubtitlePackage>

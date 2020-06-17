@@ -18,7 +18,11 @@ const MethodologyPage = () => (
       <TitleStyled>METODOLOGÍA</TitleStyled>
     <Row>
       <Col size={1}>
-        <ImageSolution alt="Metodología" src={metodologia} />
+        <ImageSolution
+          alt="Metodología"
+          src={metodologia}
+          data-src={metodologia}
+        />
       </Col>
 
       <Col size={1}>
