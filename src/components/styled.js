@@ -20,12 +20,15 @@ export const TitleStyled = styled.h2`
   &:after {
     content: ' ';
     display: block;
-    position: absolute;
+    margin-top: 20px;
     width: 65px;
     height: 3px;
     background: ${colors.red};
-    bottom: 0;
   }
+  /* @media (min-width: 960px) {
+    position: absolute;
+    bottom: 0;
+  } */
   @media (max-width: 1024px) {
     padding: 35px 0 15px;
     font-size: 25px;

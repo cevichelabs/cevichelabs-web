@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `CevicheLabs Web`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Laboratorio de soluciones digitales. Consultoría en Marketing Digital, Branding y Business Intelligence, E-Commerce, Sitios Web, Landing Pages`,
     author: `@cevichelabs`,
     menuLinks: [
       {
@@ -26,6 +26,7 @@ module.exports = {
       }
     ]
   },
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

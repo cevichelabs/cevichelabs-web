@@ -1,5 +1,8 @@
 import React from "react"
-import { TitleStyled, ParagraphContentStyled } from "../components/styled"
+import {
+  TitleStyled,
+  ParagraphContentStyled
+} from "../components/styled"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"

@@ -29,7 +29,7 @@ const config = {
     'static/**/*',
     '404/'
   ],
-  deleteRemote: false,
+  deleteRemote: true,
   forcePasv: true
 }
 
@@ -45,7 +45,7 @@ ftpDeploy.on('uploading', (data) => {
 });
 
 ftpDeploy.on('uploaded', (data) => {
-  console.log(data);
+  console.info(data);
 });
 
 ftpDeploy.on('log', (data) => {

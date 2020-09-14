@@ -68,8 +68,8 @@ const HeaderSlogan = styled.h2`
 `;
 
 const HeaderDot = styled.span`
-  color: red
-`
+  color: red;
+`;
 
 const HeaderMenu = styled.nav`
   display: flex;
