@@ -17,6 +17,10 @@ const MethodologyPage = () => (
     <SEO title="Metodología" />
       <TitleStyled>METODOLOGÍA</TitleStyled>
     <Row>
+      <Col size={2}>
+      </Col>
+    </Row>
+    <Row>
       <Col size={1}>
         <ImageSolution
           alt="Metodología"
@@ -27,7 +31,7 @@ const MethodologyPage = () => (
 
       <Col size={1}>
         <SubTitleStyled>GROWTH HACKING</SubTitleStyled>
-        <ParagraphStyled align={'left'}>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growht Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
+        <ParagraphStyled align={'left'}>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growth Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
       </Col>
     </Row>
   </Layout>

@@ -5,6 +5,7 @@ export const Grid = styled.div`
 `
 
 export const Row = styled.div`
+  /* background-color: #ff2ff1; */
   display: flex;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
