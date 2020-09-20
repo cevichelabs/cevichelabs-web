@@ -19,12 +19,11 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
-          
-            menuLinks {
-              name
-              link
-              description
-            }
+          menuLinks {
+            name
+            link
+            description
+          }
         }
       }
     }
