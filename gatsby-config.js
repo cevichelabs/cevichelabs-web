@@ -24,6 +24,38 @@ module.exports = {
         description: "Cómo te ayudamos",
         link: '/experiencia',
       }
+    ],
+    portfolio: [
+      {
+        id: 1,
+        url: 'http://chinocharapa.pe/',
+        description: 'Delivery fusión comida de la selva y oriental',
+        image: 'chinocharapa'
+      },
+      {
+        id: 2,
+        url: 'http://wellplaystore.com/',
+        description: 'Catálogo Online de periféricos para gamers',
+        image: 'wellplaystore'
+      },
+      {
+        id: 3,
+        url: 'http://luchalibro.pe/',
+        description: 'Programa de televisión de Canal 7',
+        image: 'luchalibro'
+      },
+      {
+        id: 4,
+        url: 'http://bareto.pe/',
+        description: 'Website oficial de la banda peruana ',
+        image: 'bareto'
+      },
+      {
+        id: 5,
+        url: 'https://solida.com.pe/',
+        description: 'Proyectos inmobiliarios',
+        image: 'solida'
+      },
     ]
   },
   pathPrefix: '/',
@@ -53,28 +85,7 @@ module.exports = {
       options: {
         trackingId: `UA-61106849-1`
       },
-      resolve: 'gatsby-plugin-web-font-loader',
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Asap`,
-            variants: [`600`]
-          },
-          {
-            family: `Archivo Black`,
-            variants: [`normal`]
-          },
-          {
-            family: `BenchNine`,
-            variants: [`normal`]
-          },
-          {
-            family: `Oswald`,
-            variants: [`400`]
-          }
-        ]
-      }
+      resolve: `gatsby-plugin-preload-fonts`,
     },
     `gatsby-plugin-sharp`,
     {

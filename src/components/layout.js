@@ -31,16 +31,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header 
+      <Header
         menuLinks={data.site.siteMetadata.menuLinks}
         siteTitle={data.site.siteMetadata.title}
       />
       <MainPage>{children}</MainPage>
-      {/* <footer>
+      <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer> */}
+        {/* Code by
+        {` `}
+        <a href="https://www.romeroruiz.com">romeroruiz.com</a> */}
+      </footer>
     </>
   )
 }

@@ -16,19 +16,17 @@ export const TitleStyled = styled.h2`
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+  flex-direction: column;
   position: relative;
   &:after {
     content: ' ';
     display: block;
-    margin-top: 20px;
+    margin: 20px auto 0;
     width: 65px;
     height: 3px;
     background: ${colors.red};
   }
-  /* @media (min-width: 960px) {
-    position: absolute;
-    bottom: 0;
-  } */
+
   @media (max-width: 1024px) {
     padding: 35px 0 15px;
     font-size: 25px;

@@ -87,7 +87,7 @@ const HeaderMenu = styled.nav`
     color: #ffffff;
   }
   @media (max-width: 1024px) {
-    display: ${(props) => props.show ? 'flex' : 'none' };
+    display: ${(props) => props.show ? 'flex' : 'none'};
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -138,16 +138,16 @@ const MainMenu = styled.div`
 `;
 
 const Header = ({ siteTitle, menuLinks }) => {
-  
+
   const [show, setShow] = React.useState(false);
-  
+
   return (
     <HeaderComponent>
       <HeaderContent>
         <HeaderContentLogo>
           <HeaderTitle>
             <Link to="/">
-              <img 
+              <img
                 src={Logo}
                 data-src={Logo}
                 alt="CevicheLabs"
@@ -176,7 +176,8 @@ const Header = ({ siteTitle, menuLinks }) => {
         />
       </HeaderContent>
     </HeaderComponent>
-)}
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

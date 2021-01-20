@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Grid = styled.div`
-  height: ${(props) => props.height}
+  height: ${(props) => props.height};
 `
 
 export const Row = styled.div`
