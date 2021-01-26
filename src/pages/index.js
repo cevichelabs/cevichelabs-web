@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import {
   MainTitle,
   Hero,
-  // MainCredits
+  MainCredits
 } from "../components/styled"
 
 const IndexPage = () => (
@@ -18,7 +18,7 @@ const IndexPage = () => (
         CONSULTORÍA EN MARKETING DIGITAL, BRANDING Y BUSINESS INTELLIGENCE
       </MainTitle>
     </Hero>
-    {/* <MainCredits>Photo by Raphael Lovaski on Unsplash</MainCredits> */}
+    <MainCredits>Photo by Raphael Lovaski on Unsplash</MainCredits>
     <Image />
   </Layout>
 )

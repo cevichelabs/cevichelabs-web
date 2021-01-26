@@ -36,14 +36,14 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <MainPage>{children}</MainPage>
-      <footer>
+      {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
-        {/* Code by
+        Code by
         {` `}
-        <a href="https://www.romeroruiz.com">romeroruiz.com</a> */}
-      </footer>
+        <a href="https://www.romeroruiz.com">romeroruiz.com</a>
+      </footer> */}
     </>
   )
 }

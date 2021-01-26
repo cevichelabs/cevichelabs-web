@@ -39,7 +39,6 @@ export const TitleMinorStyled = styled(TitleStyled)`
 `
 
 export const MainTitle = styled(TitleStyled)`
-  position: absolute;
   z-index: 1;
   color: ${colors.white};
   width: 100%;
@@ -98,7 +97,6 @@ export const Hero = styled.div`
   top: 50%;
   margin-top: -25vh;
   position: absolute;
-  left: 50%;
   @media only screen and (max-width: 1024px) {
     margin-top: 200px;
     top: 0;
