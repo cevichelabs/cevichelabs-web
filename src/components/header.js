@@ -133,7 +133,6 @@ const MainMenu = styled.div`
     position: absolute;
     z-index: 5;
     right: 10px;
-    top: 6%;
   }
 `;
 

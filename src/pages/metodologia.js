@@ -34,6 +34,11 @@ const MethodologyPage = () => (
         <ParagraphStyled align={'left'}>Desarrollamos una dinámica estratégica, primero planificando, luego abordar cada etapa del proyecto estableciendo una solución a cada problema basado en el método “Growth Hacking”, soluciones tecnológicas y de comunicación para resolver cada reto. </ParagraphStyled>
       </Col>
     </Row>
+    <Row>
+      <Col size={2}>
+        <br />
+      </Col>
+    </Row>
   </Layout>
 )
 
