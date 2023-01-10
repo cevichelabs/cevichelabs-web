@@ -7,33 +7,35 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
+import data from "./../data/data.json"
 
 import Header from "./header"
 import { MainPage } from "./styled"
-import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          menuLinks {
-            name
-            link
-            description
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //         menuLinks {
+  //           name
+  //           link
+  //           description
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
+  console.log('data', data);
 
   return (
     <>
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        siteTitle={data.site.siteMetadata.title}
+        menuLinks={data.menuLinks}
+        siteTitle={data.title}
       />
       <MainPage>{children}</MainPage>
       {/* <footer>

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
 import { Row, Col } from "../components/base/grid"
 import {
@@ -58,19 +58,19 @@ const Portfolio = [
 
 const ExperiencePage = ({ children }) => {
 
-  const data = useStaticQuery(graphql`
-    query SitePorFolioQuery {
-      site {
-        siteMetadata {
-          portfolio {
-            description
-            url
-            image
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SitePorFolioQuery {
+  //     site {
+  //       siteMetadata {
+  //         portfolio {
+  //           description
+  //           url
+  //           image
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (<Layout>
     <SEO title="Experiencia" />

@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import Link from "next/link"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -139,13 +139,14 @@ const MainMenu = styled.div`
 const Header = ({ siteTitle, menuLinks }) => {
 
   const [show, setShow] = React.useState(false);
+  console.log('siteTitle', siteTitle);
 
   return (
     <HeaderComponent>
       <HeaderContent>
         <HeaderContentLogo>
           <HeaderTitle>
-            <Link to="/">
+            <Link href="/">
               <img
                 src={Logo}
                 data-src={Logo}
@@ -157,7 +158,7 @@ const Header = ({ siteTitle, menuLinks }) => {
         <HeaderMenu show={show}>
           {menuLinks.map((item) => {
             return (
-              <Link to={item.link} key={item.name}>
+              <Link href={item.link} key={item.name}>
                 <HeaderMenuItem>{item.name}</HeaderMenuItem>
                 <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
               </Link>
