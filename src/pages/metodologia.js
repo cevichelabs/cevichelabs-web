@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,7 +8,6 @@ import {
   TitleStyled,
   SubTitleStyled,
   ParagraphStyled,
-  ImageSolution 
 } from "../components/styled"
 import metodologia from "./../images/metodologia.svg"
 import { Row, Col } from "../components/base/grid"
@@ -22,7 +22,7 @@ const MethodologyPage = () => (
     </Row>
     <Row>
       <Col size={1}>
-        <ImageSolution
+        <Image
           alt="Metodología"
           src={metodologia}
           data-src={metodologia}

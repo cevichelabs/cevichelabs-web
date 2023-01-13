@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components";
+import Image from "next/image"
 
 const PorfolioWrapper = styled.nav`
   display: grid;
@@ -32,7 +33,7 @@ export const PortfolioItem = ({ items }) => (
     {items.map((item, index) => {
       return (
         <PortFolioLink key={index} href={item.url} title={item.label} target="_blank">
-          <PortfolioImage key={index} src={`${item.image}`} />
+          <Image key={index} src={item.image} width={200} height={'auto'} />
         </PortFolioLink>
       )
     })}

@@ -1,11 +1,12 @@
 import React from "react"
+import Image from "next/image"
+
 import { 
   TitleStyled,
   ItemSolution,
   ContainImage,
   SubTitleSection,
   SubTitleStyled,
-  ImageSolution,
   ParagraphStyled,
   ImageSectionSolution
 } from "../components/styled"
@@ -32,7 +33,7 @@ const SolutionsPage = () => (
         <Col size={1}>
           <ItemSolution>
             <ContainImage>
-              <ImageSolution 
+              <Image 
                 alt="Estrategia" 
                 src={Estrategia} 
                 data-src={Estrategia} 
@@ -46,7 +47,7 @@ const SolutionsPage = () => (
         <Col size={1}>
           <ItemSolution>
             <ContainImage>
-              <ImageSolution 
+              <Image 
                 alt='Branding' 
                 src={Branding} 
                 data-src={Branding} 
@@ -60,7 +61,7 @@ const SolutionsPage = () => (
         <Col size={1}>
           <ItemSolution>
             <ContainImage>
-              <ImageSolution 
+              <Image 
                 alt='Productos' 
                 src={Producto} 
                 data-src={Producto} 
@@ -74,7 +75,7 @@ const SolutionsPage = () => (
         <Col size={1}>
           <ItemSolution>
             <ContainImage>
-              <ImageSolution 
+              <Image 
                 alt='Contenidos' 
                 src={Contenidos} 
                 data-src={Contenidos} 
@@ -91,7 +92,7 @@ const SolutionsPage = () => (
     <Grid>
       <Row>
         <Col size={2}>
-          <ImageSolution 
+          <Image 
             alt='Contenidos' 
             src={EstrategiaDigital} 
             data-src={EstrategiaDigital} 
@@ -112,7 +113,7 @@ const SolutionsPage = () => (
           <ParagraphStyled align={'left'}>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
         </Col>
         <Col size={2}>
-          <ImageSolution
+          <Image
             alt='Contenidos'
             src={BrandingDigital}
             data-src={BrandingDigital}
@@ -125,7 +126,7 @@ const SolutionsPage = () => (
       </Row>
       <Row>
         <Col size={2}>
-          <ImageSolution
+          <Image
             alt='Contenidos'
             src={DesarrolloDeProducto} 
             data-src={DesarrolloDeProducto} 
@@ -146,7 +147,7 @@ const SolutionsPage = () => (
           <ParagraphStyled align={'left'}>Para que tu negocio tenga visibilidad, se necesita saber el propósito que cumple dentro del océano de posibilidades en el mundo digital, hoy en día los consumidores valoran mucho más las experiencias que los propios productos, podemos ayudarte a identificar la personalidad y darle forma a tu propuesta de valor para que volteen a mirarte.</ParagraphStyled>
         </Col>
         <Col size={2}>
-          <ImageSolution
+          <Image
             alt='Contenidos'
             src={MarketingDeContenidos} 
             data-src={MarketingDeContenidos} 

@@ -132,15 +132,6 @@ export const ItemSolution = styled.div`
   justify-content: center;
 `
 
-export const ImageSolution = styled.img`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  margin: 0 auto;
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
-`
-
 export const ImageSectionSolution = styled.div`
   background-color: ${colors.mainColor};
   padding: 10px 2em;

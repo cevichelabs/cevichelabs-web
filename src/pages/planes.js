@@ -1,9 +1,10 @@
 import React from "react"
+import Image from "next/image"
+
 import {
   TitleStyled,
   TitleMinorStyled,
   ParagraphContentStyled,
-  ImageSolution,
   SubtitlePackage,
   ItemsPackage,
   ItemPackage,
@@ -50,7 +51,7 @@ const PlansPage = () => (
     <TitleMinorStyled>TIENDA VIRTUAL</TitleMinorStyled>
     <Row>
       <Col sise={1}>
-        <ImageSolution 
+        <Image 
           src={TiendaVirtual}
           data-src={TiendaVirtual}
           alt=""
@@ -109,7 +110,7 @@ const PlansPage = () => (
     <TitleMinorStyled>OTRAS SOLUCIONES</TitleMinorStyled>
     <Row>
       <Col sise={1}>
-        <ImageSolution 
+        <Image 
           src={OtrasSoluciones}
           data-src={OtrasSoluciones}
           alt=""

@@ -2,6 +2,7 @@ import Link from "next/link"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import Image from "next/image"
 import Logo from "./../images/logo.svg"
 import { colors } from "./constants"
 
@@ -34,9 +35,6 @@ const HeaderTitle = styled.h1`
   margin: 0;
   span {
     text-indent: -9999px;
-  }
-  img {
-    margin: 0;
   }
   svg {
     margin: auto;
@@ -136,10 +134,9 @@ const MainMenu = styled.div`
   }
 `;
 
-const Header = ({ siteTitle, menuLinks }) => {
+const Header = ({ menuLinks }) => {
 
   const [show, setShow] = React.useState(false);
-  console.log('siteTitle', siteTitle);
 
   return (
     <HeaderComponent>
@@ -147,7 +144,7 @@ const Header = ({ siteTitle, menuLinks }) => {
         <HeaderContentLogo>
           <HeaderTitle>
             <Link href="/">
-              <img
+              <Image
                 src={Logo}
                 data-src={Logo}
                 alt="CevicheLabs"

@@ -1,7 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
+import Img from "next/image"
 import SEO from "../components/seo"
 import {
   MainTitle,
@@ -9,6 +10,7 @@ import {
   MainCredits
 } from "../components/styled"
 
+import HeroBackground from "./../images/hero-background.jpg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -18,7 +20,13 @@ const IndexPage = () => (
       </MainTitle>
     </Hero>
     <MainCredits>Photo by Raphael Lovaski on Unsplash</MainCredits>
-    <Image />
+    <Img
+      loading='lazy'
+      src={HeroBackground}
+      width={'100%'}
+      height={'auto'}
+      alt='placeholder'
+    />
   </Layout>
 )
 
