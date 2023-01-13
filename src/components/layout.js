@@ -1,35 +1,19 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
 import data from "./../data/data.json"
 
 import Header from "./header"
 import { MainPage } from "./styled"
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         menuLinks {
-  //           name
-  //           link
-  //           description
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+const MainFooter = styled.footer`
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+`
 
-  console.log('data', data);
+const Layout = ({ children }) => {
 
   return (
     <>
@@ -38,14 +22,15 @@ const Layout = ({ children }) => {
         siteTitle={data.title}
       />
       <MainPage>{children}</MainPage>
-      {/* <footer>
+      <MainFooter>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://nextjs.org">Nextjs</a>
+        {` `}
         Code by
         {` `}
-        <a href="https://www.romeroruiz.com">romeroruiz.com</a>
-      </footer> */}
+        <a href="https://romeroruiz.com">romeroruiz.com</a>
+      </MainFooter>
     </>
   )
 }

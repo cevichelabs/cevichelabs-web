@@ -148,6 +148,9 @@ const Header = ({ menuLinks }) => {
                 src={Logo}
                 data-src={Logo}
                 alt="CevicheLabs"
+                style={{
+                  marginBottom: 0
+                }}
               />
             </Link>
           </HeaderTitle>
@@ -155,7 +158,7 @@ const Header = ({ menuLinks }) => {
         <HeaderMenu show={show}>
           {menuLinks.map((item) => {
             return (
-              <Link href={item.link} key={item.name}>
+              <Link href={item.link} key={item.name} onClick={() => {setShow(false)}}>
                 <HeaderMenuItem>{item.name}</HeaderMenuItem>
                 <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
               </Link>

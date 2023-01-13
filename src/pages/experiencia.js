@@ -8,7 +8,7 @@ import {
 import { PortfolioItem } from "../components/portfolio/item"
 
 import chinocharapa from "./../images/portfolio/chino-charapa.svg"
-// import wellplaystore from "./../images/portfolio/well-play-store.svg"
+import christoper from "./../images/portfolio/chirstoper-vasquez.png"
 import luchalibro from "./../images/portfolio/lucha-libro.svg"
 import bareto from "./../images/portfolio/bareto.svg"
 import solida from "./../images/portfolio/solida.svg"
@@ -20,17 +20,17 @@ const Portfolio = [
   {
     id: 1,
     label: 'Chino Charapa',
-    url: 'http://chinocharapa.pe/',
+    url: 'http://luchalibro.pe/chinocharapa/',
     description: 'Delivery fusión comida de la selva y oriental',
     image: chinocharapa
   },
-  // {
-  //   id: 2,
-  //   label: 'Well Play Store',
-  //   url: 'https://wellplaystore.com/',
-  //   description: 'Catálogo Online de periféricos para gamers',
-  //   image: wellplaystore
-  // },
+  {
+    id: 2,
+    label: 'CHRISTOPHER VÁSQUEZ',
+    url: 'http://luchalibro.pe/christopher-vasquez/',
+    description: 'Guionista / Scriptwriter',
+    image: christoper
+  },
   {
     id: 3,
     label: 'luchalibro',
@@ -54,7 +54,7 @@ const Portfolio = [
   },
 ]
 
-const ExperiencePage = ({ children }) => {
+const ExperiencePage = () => {
 
   return (<Layout>
     <SEO title="Experiencia" />

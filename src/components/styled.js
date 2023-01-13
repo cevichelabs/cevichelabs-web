@@ -4,7 +4,6 @@ import { colors } from "./constants"
 export const MainPage = styled.main`
   text-align: center;
   background-image: ${(props) => props.background};
-  height: calc(100vh - 150px);
 `
 export const TitleStyled = styled.h2`
   font-family: 'Archivo Black', sans-serif;

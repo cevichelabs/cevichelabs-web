@@ -1,5 +1,4 @@
 import React from "react"
-// import { useStaticQuery, graphql } from "gatsby"
 import Img from "next/image"
 
 const Image = (props) => {

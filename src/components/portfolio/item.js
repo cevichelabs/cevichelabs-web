@@ -8,7 +8,7 @@ const PorfolioWrapper = styled.nav`
   justify-content: space-between;
   max-width: 1024px;
   margin: 100px auto;
-  align-items: top;
+  align-items: center;
   @media only screen and (max-width: 480px) {
     grid-template-columns: 1fr 1fr;
     flex-direction: column;
@@ -19,7 +19,8 @@ const PortFolioLink = styled.a`
   color: black;
   display: block;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 30px;
+  width: 90%;
 `
 
 const PortfolioImage = styled.img`
@@ -33,7 +34,7 @@ export const PortfolioItem = ({ items }) => (
     {items.map((item, index) => {
       return (
         <PortFolioLink key={index} href={item.url} title={item.label} target="_blank">
-          <Image key={index} src={item.image} width={200} height={'auto'} />
+          <Image key={index} src={item.image} width={165} height={'auto'} />
         </PortFolioLink>
       )
     })}
