@@ -68,3 +68,4 @@ yarn-error.log
 
 # Next files
 .next
+build/

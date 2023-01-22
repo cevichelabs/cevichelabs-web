@@ -6,5 +6,5 @@ module.exports = {
   compiler: {
     styledComponents: true,
   },
-  images: { unoptimized: true }
+  images: { unoptimized: true },
 }

@@ -31,10 +31,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export -o build/",
     "clean": "next clean",
     "deploy": "node deploy",
     "dev": "next dev",
+    "serve": "node serve",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "local": "yarn build --prefix-paths && yarn serve --prefix-paths",
     "lint": "next lint",
