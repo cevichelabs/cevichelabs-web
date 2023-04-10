@@ -1,34 +1,25 @@
-on: push
+on: [push]
 name: Deploy website on push
 jobs:
   web-deploy:
-    name:
+    name: cms-wordpress-app
     runs-on: ubuntu-latest
     steps:
       - name: Get latest code
-        uses: actions/checkout@v2.3.2
+        uses: actions/checkout@v3.5.0
 
       - name: Build project
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn build
 
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public/
-          server-dir: public_html/
-          exclude: .git*
-            - .git*/**
-            -  **/.git*/**
-            - node_modules/**
-            - node_modules/**/*
-            - .env
-            - src/**/*
-            - pages/**
-            - pages/**/*
-            - lib/**
-            - lib/**/*
+          port: ${{ secrets.FTP_PORT }}
+          local_path: build/
+          remote_path: public_html/
+          sftp_only: true
