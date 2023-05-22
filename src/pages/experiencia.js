@@ -7,6 +7,7 @@ import {
 } from "../components/styled"
 import { PortfolioItem } from "../components/portfolio/item"
 
+import at from "./../images/portfolio/at.gif"
 import chinocharapa from "./../images/portfolio/chino-charapa.svg"
 import christoper from "./../images/portfolio/chirstoper-vasquez.png"
 import luchalibro from "./../images/portfolio/lucha-libro.svg"
@@ -17,6 +18,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Portfolio = [
+  {
+    id: 0,
+    label: 'Anibal Torres',
+    url: 'https://www.etorresvasquez.com.pe/',
+    description: 'Ex-Decano del Colegio de Abogados de Lima',
+    image: at
+  },
   {
     id: 1,
     label: 'Chino Charapa',
@@ -41,7 +49,7 @@ const Portfolio = [
   {
     id: 4,
     label: 'Bareto',
-    url: 'http://bareto.pe/',
+    url: 'http://baretoweb.com/',
     description: 'Website oficial de la banda peruana ',
     image: bareto
   },
@@ -63,15 +71,6 @@ const ExperiencePage = () => {
     </ParagraphContentStyled>
 
     <Row>
-      <Col size={1}>
-        {/* TODO: activate contact */}
-        {/* <TitleStyled>¿QUÉ NOS QUIERES PREGUNTAR?</TitleStyled> */}
-        {/* <ParagraphStyled align={'left'}>Tenemos un equipo con múltiples habilidades y conocimientos, todos con mucha experiencia desarrollando productos digitales. Hemos implementación negocios digitales desde cero, para diferentes industrias, eso nos permite entender como aplicar digital a cada tipo de negocio, te mostramos un poco las marcas con las que hemos colaborado.
-    </ParagraphStyled> */}
-      </Col>
-      <Col size={1}>
-        <br />
-      </Col>
     </Row>
     <Row>
       <PortfolioItem
