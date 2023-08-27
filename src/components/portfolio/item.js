@@ -9,12 +9,13 @@ const PorfolioWrapper = styled.nav`
   max-width: 1024px;
   margin: 100px auto;
   align-items: center;
+  gap: 10px;
   @media only screen and (min-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
   }
   @media only screen and (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 `
 
