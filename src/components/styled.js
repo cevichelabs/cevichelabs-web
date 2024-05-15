@@ -3,14 +3,12 @@ import { colors } from "./constants"
 
 export const MainPage = styled.main`
   text-align: center;
-  background-image: ${(props) => props.background};
+  background-image: ${props => props.background};
 `
 export const TitleStyled = styled.h2`
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   color: ${colors.mainColor};
   font-size: 68px;
-  padding: 60px 0 10px;
-  margin-bottom: 75px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -18,7 +16,7 @@ export const TitleStyled = styled.h2`
   flex-direction: column;
   position: relative;
   &:after {
-    content: ' ';
+    content: " ";
     display: block;
     margin: 20px auto 0;
     width: 65px;
@@ -27,7 +25,6 @@ export const TitleStyled = styled.h2`
   }
 
   @media (max-width: 1024px) {
-    padding: 35px 0 15px;
     font-size: 25px;
     line-height: 30px;
   }
@@ -43,12 +40,12 @@ export const MainTitle = styled(TitleStyled)`
   width: 100%;
   @media only screen and (max-width: 480px) {
     width: 100%;
-    padding: 20px 10px;
+    padding: 0 10px;
   }
 `
 
 export const SubTitleStyled = styled(TitleStyled)`
-  font-family: 'BenchNine', sans-serif;
+  font-family: "BenchNine", sans-serif;
   justify-content: left;
   margin: 0 auto 20px;
   padding: 0 0 10px;
@@ -65,14 +62,14 @@ export const SubTitleStyled = styled(TitleStyled)`
 `
 
 export const ParagraphStyled = styled.p`
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 19px;
   width: 75%;
   margin: auto;
-  text-align: ${(props) => props.align};
+  text-align: ${props => props.align};
   color: ${colors.grayOne};
   @media only screen and (max-width: 480px) {
     font-size: 14px;
@@ -92,18 +89,12 @@ export const ParagraphContentStyled = styled(ParagraphStyled)`
 `
 
 export const Hero = styled.div`
-  height: 100vh;
-  top: 50%;
-  margin-top: -25vh;
+  display: flex;
   position: absolute;
+  height: calc(100vh - 150px);
+  align-items: center;
   @media only screen and (max-width: 1024px) {
-    margin-top: 200px;
-    top: 0;
-    left: 0;
     width: 100%;
-  }
-  @media only screen and (max-width: 480px) {
-    margin-top: 90px;
   }
 `
 
@@ -116,6 +107,12 @@ export const MainCredits = styled.div`
   width: 100%;
   position: absolute;
   bottom: 10px;
+  z-index: 5;
+`
+
+export const ImageContainer = styled.div`
+  position: relative;
+  height: calc(100vh - 150px);
 `
 
 export const ButtonDown = styled.button`
@@ -134,12 +131,12 @@ export const ItemSolution = styled.div`
 export const ImageSectionSolution = styled.div`
   background-color: ${colors.mainColor};
   padding: 10px 2em;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 15px;
-  text-align: ${(props) => props.align};
+  text-align: ${props => props.align};
   color: rgba(255, 255, 255, 0.5);
 `
 
@@ -186,7 +183,7 @@ export const ItemsPackage = styled.ul`
 `
 
 export const ItemPackage = styled.li`
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   list-style: none;
   font-style: normal;
   font-weight: normal;

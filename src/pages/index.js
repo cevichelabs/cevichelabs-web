@@ -1,12 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Img from "next/image"
+import Image from "next/image"
 import SEO from "../components/seo"
 import {
   MainTitle,
   Hero,
-  MainCredits
+  MainCredits,
+  ImageContainer,
 } from "../components/styled"
 
 import HeroBackground from "./../images/hero-background.jpg"
@@ -19,13 +20,15 @@ const IndexPage = () => (
       </MainTitle>
     </Hero>
     <MainCredits>Photo by Raphael Lovaski on Unsplash</MainCredits>
-    <Img
-      loading='lazy'
-      src={HeroBackground}
-      width={'100%'}
-      height={'auto'}
-      alt='placeholder'
-    />
+    <ImageContainer>
+      <Image
+        loading="lazy"
+        src={HeroBackground}
+        fill
+        alt="placeholder"
+        style={{ objectFit: "cover" }}
+      />
+    </ImageContainer>
   </Layout>
 )
 

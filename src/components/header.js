@@ -7,14 +7,16 @@ import Logo from "./../images/logo.svg"
 import { colors } from "./constants"
 
 const HeaderComponent = styled.header`
-  background: #223D98;
+  background: #223d98;
   display: flex;
-  height: 150px;
   overflow: hidden;
+  width: 100%;
+  z-index: 20;
+  position: relative;
   @media only screen and (max-width: 480px) {
     height: 100px;
   }
-`;
+`
 
 const HeaderContentLogo = styled.div`
   background: #253672;
@@ -24,7 +26,7 @@ const HeaderContent = styled.div`
   align-items: center;
   display: flex;
   flex-basis: 100%;
-`;
+`
 
 const HeaderTitle = styled.h1`
   width: 200px;
@@ -43,7 +45,7 @@ const HeaderTitle = styled.h1`
   @media only screen and (max-width: 480px) {
     width: 85px;
   }
-`;
+`
 
 const HeaderSlogan = styled.h2`
   align-items: initial;
@@ -53,7 +55,7 @@ const HeaderSlogan = styled.h2`
   line-height: 28px;
   display: flex;
   margin: 25px 10px auto 0;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   width: 200px;
   @media only screen and (max-width: 1024px) {
     width: 90px;
@@ -63,11 +65,11 @@ const HeaderSlogan = styled.h2`
     margin-left: auto;
     margin-right: 75px;
   }
-`;
+`
 
 const HeaderDot = styled.span`
   color: red;
-`;
+`
 
 const HeaderMenu = styled.nav`
   display: flex;
@@ -85,7 +87,7 @@ const HeaderMenu = styled.nav`
     color: #ffffff;
   }
   @media (max-width: 1024px) {
-    display: ${(props) => props.show ? 'flex' : 'none'};
+    display: ${props => (props.show ? "flex" : "none")};
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -99,22 +101,22 @@ const HeaderMenu = styled.nav`
       padding: 0;
     }
   }
-`;
+`
 
 const HeaderMenuItem = styled.big`
-  font-family: 'BenchNine', sans-serif;
+  font-family: "BenchNine", sans-serif;
   font-size: 30px;
   display: flex;
   font-style: normal;
   font-weight: bold;
   justify-content: center;
-`;
+`
 
 const HeaderMenuDescription = styled.small`
   font-size: 0.75em;
   margin-top: 3px;
-  font-family: 'Asap', sans-serif;
-`;
+  font-family: "Asap", sans-serif;
+`
 
 const MainMenu = styled.div`
   background-color: #253672;
@@ -132,11 +134,10 @@ const MainMenu = styled.div`
     z-index: 5;
     right: 10px;
   }
-`;
+`
 
 const Header = ({ menuLinks }) => {
-
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(false)
 
   return (
     <HeaderComponent>
@@ -149,18 +150,26 @@ const Header = ({ menuLinks }) => {
                 data-src={Logo}
                 alt="CevicheLabs"
                 style={{
-                  marginBottom: 0
+                  marginBottom: 0,
                 }}
               />
             </Link>
           </HeaderTitle>
         </HeaderContentLogo>
         <HeaderMenu show={show}>
-          {menuLinks.map((item) => {
+          {menuLinks.map(item => {
             return (
-              <Link href={item.link} key={item.name} onClick={() => {setShow(false)}}>
+              <Link
+                href={item.link}
+                key={item.name}
+                onClick={() => {
+                  setShow(false)
+                }}
+              >
                 <HeaderMenuItem>{item.name}</HeaderMenuItem>
-                <HeaderMenuDescription>{item.description}</HeaderMenuDescription>
+                <HeaderMenuDescription>
+                  {item.description}
+                </HeaderMenuDescription>
               </Link>
             )
           })}
