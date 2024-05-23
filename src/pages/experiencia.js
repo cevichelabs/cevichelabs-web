@@ -13,7 +13,7 @@ import solida from "./../images/portfolio/solida.svg"
 import contintatusan from "./../images/portfolio/contintatusan.png"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { NextSeo } from "next-seo"
 
 const Portfolio = [
   {
@@ -70,7 +70,24 @@ const Portfolio = [
 const ExperiencePage = () => {
   return (
     <Layout>
-      <SEO title="Experiencia" />
+      <NextSeo
+        title="Experiencia"
+        description="This is the description of the home page"
+        openGraph={{
+          url: "http://cevichelabs.com/",
+          title: "Home Page Title",
+          description:
+            "Laboratorio de soluciones digitales. Consultoría en Marketing Digital, Branding y Business Intelligence, E-Commerce, Sitios Web, Landing Pages",
+          images: [
+            {
+              url: "http://cevichelabs.com/static/images/og-image.jpeg",
+              width: 1200,
+              height: 630,
+              alt: "Laboratorio de soluciones digitales",
+            },
+          ],
+        }}
+      />
       <TitleStyled>EXPERIENCIA</TitleStyled>
       <ParagraphContentStyled>
         Tenemos un equipo con múltiples habilidades y conocimientos, todos con
