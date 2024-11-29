@@ -21,16 +21,20 @@ const PorfolioWrapper = styled.nav`
 
 const PortFolioLink = styled.a`
   color: black;
-  display: block;
   text-decoration: none;
   margin: 0 30px;
   width: 90%;
 `
 
-const PortfolioImage = styled.img`
+const PortfolioImage = styled.div`
+  display: grid;
+  height: 220px;
+  place-items: center;
   width: auto;
-  height: auto;
-  padding: 5px;
+  img {
+    width: 75%;
+    height: auto;
+  }
 `
 
 export const PortfolioItem = ({ items }) => (
@@ -44,7 +48,11 @@ export const PortfolioItem = ({ items }) => (
           target="_blank"
           alt={item.label}
         >
-          <Image key={index} src={item.image} width={165} height={"auto"} />
+          <PortfolioImage>
+            <Image key={index} src={item.image} width={165} height={"auto"} />
+          </PortfolioImage>
+          <h3>{item.label}</h3>
+          <p>{item.description}</p>
         </PortFolioLink>
       )
     })}

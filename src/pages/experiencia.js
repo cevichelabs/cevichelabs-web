@@ -63,14 +63,16 @@ const Portfolio = [
     id: 6,
     label: "Con Tinta Tusan",
     url: "https://www.contintatusan.com/",
-    description: "Tu sanaje",
+    description:
+      "Exhibición digital literaria que presenta a 26 escritores peruanos de ascendencia china",
     image: contintatusan,
   },
   {
     id: 7,
     label: "Ready Roofing",
     url: "https://readyroofing.com/",
-    description: "Ready Roofing",
+    description:
+      "Roofing contractor offering services such as roof repairs and complete installations",
     image: readyroofing,
   },
 ]
@@ -107,7 +109,7 @@ const ExperiencePage = () => {
 
       <Row></Row>
       <Row>
-        <PortfolioItem items={Portfolio} />
+        <PortfolioItem items={Portfolio.reverse()} />
       </Row>
     </Layout>
   )

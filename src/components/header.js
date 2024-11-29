@@ -12,6 +12,7 @@ const HeaderComponent = styled.header`
   overflow: hidden;
   width: 100%;
   z-index: 20;
+  margin-bottom: 3rem;
   position: relative;
   @media only screen and (max-width: 480px) {
     height: 100px;
