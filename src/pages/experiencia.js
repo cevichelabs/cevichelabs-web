@@ -9,6 +9,7 @@ import chinocharapa from "./../images/portfolio/chino-charapa.svg"
 import christoper from "./../images/portfolio/chirstoper-vasquez.png"
 import luchalibro from "./../images/portfolio/lucha-libro.svg"
 import bareto from "./../images/portfolio/bareto.svg"
+import readyroofing from "./../images/portfolio/ready-roofing.png"
 import solida from "./../images/portfolio/solida.svg"
 import contintatusan from "./../images/portfolio/contintatusan.png"
 
@@ -64,6 +65,13 @@ const Portfolio = [
     url: "https://www.contintatusan.com/",
     description: "Tu sanaje",
     image: contintatusan,
+  },
+  {
+    id: 7,
+    label: "Ready Roofing",
+    url: "https://readyroofing.com/",
+    description: "Ready Roofing",
+    image: readyroofing,
   },
 ]
 
