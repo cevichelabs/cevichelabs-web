@@ -29,12 +29,6 @@
       "image": "chinocharapa"
     },
     {
-      "id": 2,
-      "url": "http://wellplaystore.com/",
-      "description": "Catálogo Online de periféricos para gamers",
-      "image": "wellplaystore"
-    },
-    {
       "id": 3,
       "url": "http://luchalibro.pe/",
       "description": "Programa de televisión de Canal 7",
@@ -48,6 +42,12 @@
     },
     {
       "id": 5,
+      "url": "https://solida.com.pe/",
+      "description": "Proyectos inmobiliarios",
+      "image": "solida"
+    },
+    {
+      "id": 7,
       "url": "https://solida.com.pe/",
       "description": "Proyectos inmobiliarios",
       "image": "solida"

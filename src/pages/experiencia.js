@@ -33,14 +33,14 @@ const Portfolio = [
   },
   {
     id: 2,
-    label: "CHRISTOPHER VÁSQUEZ",
+    label: "Christopher Vasquez",
     url: "http://luchalibro.pe/christopher-vasquez/",
     description: "Guionista / Scriptwriter",
     image: christoper,
   },
   {
     id: 3,
-    label: "luchalibro",
+    label: "Lucha Libro",
     url: "http://luchalibro.pe/",
     description: "Programa de televisión de Canal 7",
     image: luchalibro,
@@ -77,6 +77,8 @@ const Portfolio = [
   },
 ]
 
+const portafolioReversed = Portfolio.reverse()
+
 const ExperiencePage = () => {
   return (
     <Layout>
@@ -109,7 +111,7 @@ const ExperiencePage = () => {
 
       <Row></Row>
       <Row>
-        <PortfolioItem items={Portfolio.reverse()} />
+        <PortfolioItem items={portafolioReversed} />
       </Row>
     </Layout>
   )
