@@ -21,7 +21,7 @@ const Portfolio = [
     id: 0,
     label: "Anibal Torres",
     url: "https://www.etorresvasquez.com.pe/",
-    description: "Ex-Decano del Colegio de Abogados de Lima",
+    description: "Abogado, Ex-Decano del Colegio de Abogados de Lima",
     image: at,
   },
   {
@@ -42,21 +42,21 @@ const Portfolio = [
     id: 3,
     label: "Lucha Libro",
     url: "http://luchalibro.pe/",
-    description: "Programa de televisión de Canal 7",
+    description: "Campeonato de improvisación literaria",
     image: luchalibro,
   },
   {
     id: 4,
     label: "Bareto",
     url: "http://baretoweb.com/",
-    description: "Website oficial de la banda peruana ",
+    description: "Banda peruana que fusiona cumbia, chicha y folclore peruano",
     image: bareto,
   },
   {
     id: 5,
     label: "Solida",
     url: "https://solida.com.pe/",
-    description: "Proyectos inmobiliarios",
+    description: "Proyectos inmobiliarios, ingeniería y construcción",
     image: solida,
   },
   {
@@ -109,7 +109,6 @@ const ExperiencePage = () => {
         negocio, te mostramos un poco las marcas con las que hemos colaborado.
       </ParagraphContentStyled>
 
-      <Row></Row>
       <Row>
         <PortfolioItem items={portafolioReversed} />
       </Row>

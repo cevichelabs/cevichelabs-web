@@ -3,13 +3,13 @@ import styled from "styled-components"
 import Image from "next/image"
 
 const PorfolioWrapper = styled.nav`
+  align-items: start;
   display: grid;
+  gap: 20px;
   grid-template-columns: 1fr;
   justify-content: space-between;
-  max-width: 1024px;
   margin: 100px auto;
-  align-items: center;
-  gap: 10px;
+  max-width: 1200px;
   @media only screen and (min-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
     flex-direction: column;

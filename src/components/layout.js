@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         {` `}
         <a href="https://nextjs.org">Nextjs</a>
         {` `}
-        Code by
+        code by
         {` `}
         <a href="https://romeroruiz.com">romeroruiz.com</a>
       </MainFooter>
