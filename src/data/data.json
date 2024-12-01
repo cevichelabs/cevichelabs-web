@@ -20,37 +20,5 @@
       "description": "Cómo te ayudamos",
       "link": "/experiencia"
     }
-  ],
-  "portfolio": [
-    {
-      "id": 1,
-      "url": "http://chinocharapa.pe/",
-      "description": "Delivery fusión comida de la selva y oriental",
-      "image": "chinocharapa"
-    },
-    {
-      "id": 3,
-      "url": "http://luchalibro.pe/",
-      "description": "Programa de televisión de Canal 7",
-      "image": "luchalibro"
-    },
-    {
-      "id": 4,
-      "url": "http://bareto.pe/",
-      "description": "Website oficial de la banda peruana ",
-      "image": "bareto"
-    },
-    {
-      "id": 5,
-      "url": "https://solida.com.pe/",
-      "description": "Proyectos inmobiliarios",
-      "image": "solida"
-    },
-    {
-      "id": 7,
-      "url": "https://solida.com.pe/",
-      "description": "Proyectos inmobiliarios",
-      "image": "solida"
-    }
   ]
 }
