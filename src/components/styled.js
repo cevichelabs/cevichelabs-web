@@ -6,14 +6,12 @@ export const MainPage = styled.main`
   background-image: ${props => props.background};
 `
 export const TitleStyled = styled.h2`
-  font-family: "Archivo Black", sans-serif;
   color: ${colors.mainColor};
+  font-family: "Archivo Black", sans-serif;
   font-size: 68px;
   height: auto;
-  display: flex;
   justify-content: center;
-  flex-flow: wrap;
-  flex-direction: column;
+  padding-top: 3rem;
   position: relative;
   &:after {
     content: " ";

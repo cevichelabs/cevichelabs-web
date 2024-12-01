@@ -4,55 +4,55 @@
     "label": "Anibal Torres",
     "url": "https://www.etorresvasquez.com.pe/",
     "description": "Abogado, Ex-Decano del Colegio de Abogados de Lima",
-    "image": "at"
+    "image": "at.gif"
   },
   {
     "id": 1,
     "label": "Chino Charapa",
     "url": "http://luchalibro.pe/chinocharapa/",
     "description": "Delivery fusión comida de la selva y oriental",
-    "image": "chinocharapa"
+    "image": "chino-charapa.svg"
   },
   {
     "id": 2,
     "label": "Christopher Vasquez",
     "url": "http://luchalibro.pe/christopher-vasquez/",
     "description": "Guionista / Scriptwriter",
-    "image": "christoper"
+    "image": "chirstoper-vasquez.png"
   },
   {
     "id": 3,
     "label": "Lucha Libro",
     "url": "http://luchalibro.pe/",
     "description": "Campeonato de improvisación literaria",
-    "image": "luchalibro"
+    "image": "lucha-libro.svg"
   },
   {
     "id": 4,
     "label": "Bareto",
     "url": "http://baretoweb.com/",
     "description": "Banda peruana que fusiona cumbia, chicha y folclore peruano",
-    "image": "bareto"
+    "image": "bareto.svg"
   },
   {
     "id": 5,
     "label": "Solida",
     "url": "https://solida.com.pe/",
     "description": "Proyectos inmobiliarios, ingeniería y construcción",
-    "image": "solida"
+    "image": "solida.svg"
   },
   {
     "id": 6,
     "label": "Con Tinta Tusan",
     "url": "https://www.contintatusan.com/",
     "description": "Exhibición digital literaria que presenta a 26 escritores peruanos de ascendencia china",
-    "image": "contintatusan"
+    "image": "contintatusan.png"
   },
   {
     "id": 7,
     "label": "Ready Roofing",
     "url": "https://readyroofing.com/",
     "description": "Roofing contractor offering services such as roof repairs and complete installations",
-    "image": "readyroofing"
+    "image": "ready-roofing.png"
   }
 ]

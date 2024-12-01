@@ -7,12 +7,11 @@ import Logo from "./../images/logo.svg"
 import { colors } from "./constants"
 
 const HeaderComponent = styled.header`
-  background: #223d98;
+  background: ${colors.mainColor};
   display: flex;
   overflow: hidden;
   width: 100%;
   z-index: 20;
-  margin-bottom: 3rem;
   position: relative;
   @media only screen and (max-width: 480px) {
     height: 100px;
@@ -20,7 +19,7 @@ const HeaderComponent = styled.header`
 `
 
 const HeaderContentLogo = styled.div`
-  background: #253672;
+  background: ${colors.mainColor};
 `
 
 const HeaderContent = styled.div`
@@ -29,13 +28,13 @@ const HeaderContent = styled.div`
   flex-basis: 100%;
 `
 
-const HeaderTitle = styled.h1`
-  width: 200px;
-  height: 150px;
-  display: flex;
+const HeaderLogo = styled.h1`
   align-items: center;
+  display: flex;
+  height: 150px;
   justify-content: center;
   margin: 0;
+  width: 200px;
   span {
     text-indent: -9999px;
   }
@@ -120,7 +119,7 @@ const HeaderMenuDescription = styled.small`
 `
 
 const MainMenu = styled.div`
-  background-color: #253672;
+  background-color: ${colors.secondColor};
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.260864' y1='1.77905' x2='21.1304' y2='1.77905' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3Cline x1='0.260864' y1='10.4697' x2='21.1304' y2='10.4697' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3Cline x1='0.260864' y1='19.1602' x2='21.1304' y2='19.1602' stroke='white' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
@@ -144,7 +143,7 @@ const Header = ({ menuLinks }) => {
     <HeaderComponent>
       <HeaderContent>
         <HeaderContentLogo>
-          <HeaderTitle>
+          <HeaderLogo>
             <Link href="/">
               <Image
                 src={Logo}
@@ -155,7 +154,7 @@ const Header = ({ menuLinks }) => {
                 }}
               />
             </Link>
-          </HeaderTitle>
+          </HeaderLogo>
         </HeaderContentLogo>
         <HeaderMenu show={show}>
           {menuLinks.map(item => {
