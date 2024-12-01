@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header
-        menuLinks={data.menuLinks}
+        menuLinks={data}
         siteTitle={data.title}
       />
       <MainPage>{children}</MainPage>

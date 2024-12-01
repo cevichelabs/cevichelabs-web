@@ -1,5 +1,4 @@
-{
-  "menuLinks": [
+  [
     {
       "name": "METODOLOGÍA",
       "description": "Cómo lo que hacemos",
@@ -21,4 +20,3 @@
       "link": "/experiencia"
     }
   ]
-}

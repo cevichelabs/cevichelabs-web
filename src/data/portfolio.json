@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "label": "Anibal Torres",
+    "url": "https://www.etorresvasquez.com.pe/",
+    "description": "Abogado, Ex-Decano del Colegio de Abogados de Lima",
+    "image": "at"
+  },
+  {
+    "id": 1,
+    "label": "Chino Charapa",
+    "url": "http://luchalibro.pe/chinocharapa/",
+    "description": "Delivery fusión comida de la selva y oriental",
+    "image": "chinocharapa"
+  },
+  {
+    "id": 2,
+    "label": "Christopher Vasquez",
+    "url": "http://luchalibro.pe/christopher-vasquez/",
+    "description": "Guionista / Scriptwriter",
+    "image": "christoper"
+  },
+  {
+    "id": 3,
+    "label": "Lucha Libro",
+    "url": "http://luchalibro.pe/",
+    "description": "Campeonato de improvisación literaria",
+    "image": "luchalibro"
+  },
+  {
+    "id": 4,
+    "label": "Bareto",
+    "url": "http://baretoweb.com/",
+    "description": "Banda peruana que fusiona cumbia, chicha y folclore peruano",
+    "image": "bareto"
+  },
+  {
+    "id": 5,
+    "label": "Solida",
+    "url": "https://solida.com.pe/",
+    "description": "Proyectos inmobiliarios, ingeniería y construcción",
+    "image": "solida"
+  },
+  {
+    "id": 6,
+    "label": "Con Tinta Tusan",
+    "url": "https://www.contintatusan.com/",
+    "description": "Exhibición digital literaria que presenta a 26 escritores peruanos de ascendencia china",
+    "image": "contintatusan"
+  },
+  {
+    "id": 7,
+    "label": "Ready Roofing",
+    "url": "https://readyroofing.com/",
+    "description": "Roofing contractor offering services such as roof repairs and complete installations",
+    "image": "readyroofing"
+  }
+]
