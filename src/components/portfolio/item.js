@@ -28,12 +28,14 @@ const PortFolioLink = styled.a`
 
 const PortfolioImage = styled.div`
   display: grid;
-  height: 220px;
   place-items: center;
   width: auto;
   img {
     width: 75%;
     height: auto;
+  }
+  @media only screen and (min-width: 768px) {
+    height: 220px;
   }
 `
 
