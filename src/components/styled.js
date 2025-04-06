@@ -30,6 +30,7 @@ export const TitleStyled = styled.h2`
 
 export const TitleMinorStyled = styled(TitleStyled)`
   font-size: 45px;
+  line-height: 1;
 `
 
 export const MainTitle = styled(TitleStyled)`

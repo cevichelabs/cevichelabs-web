@@ -12,7 +12,7 @@ const HeaderComponent = styled.header`
   overflow: hidden;
   width: 100%;
   z-index: 20;
-  position: relative;
+  position: ${props => props.show ? 'static' : 'relative'};
   @media only screen and (max-width: 480px) {
     height: 100px;
   }
@@ -140,7 +140,7 @@ const Header = ({ menuLinks }) => {
   const [show, setShow] = React.useState(false)
 
   return (
-    <HeaderComponent>
+    <HeaderComponent {...{ show }}>
       <HeaderContent>
         <HeaderContentLogo>
           <HeaderLogo>

@@ -4,7 +4,6 @@ import { Row } from "../components/base/grid"
 import { TitleStyled, ParagraphContentStyled } from "../components/styled"
 import { PortfolioItem } from "../components/portfolio/item"
 
-import at from "./../images/portfolio/at.gif"
 import chinocharapa from "./../images/portfolio/chino-charapa.svg"
 import christoper from "./../images/portfolio/chirstoper-vasquez.png"
 import luchalibro from "./../images/portfolio/lucha-libro.svg"
@@ -17,13 +16,6 @@ import Layout from "../components/layout"
 import { NextSeo } from "next-seo"
 
 const Portfolio = [
-  {
-    id: 0,
-    label: "Anibal Torres",
-    url: "https://www.etorresvasquez.com.pe/",
-    description: "Abogado, Ex-Decano del Colegio de Abogados de Lima",
-    image: at,
-  },
   {
     id: 1,
     label: "Chino Charapa",
