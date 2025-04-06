@@ -27,13 +27,15 @@ jobs:
     - name: Build Next.js App
       run: npm run build
       
-    # Deploy to shared hosting via FTP
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    # Deploy to shared hosting via SFTP
+    - name: SFTP Deploy
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./build/ # Next.js static export directory
-        server-dir: ./public_html/
-        dangerous-clean-slate: true # Remove existing files in destination
+        server: ${{ secrets.SFTP_SERVER }}
+        username: ${{ secrets.SFTP_USERNAME }}
+        password: ${{ secrets.SFTP_PASSWORD }}
+        port: ${{ secrets.SFTP_PORT }}
+        local_path: './build/*' # Next.js build directory
+        remote_path: './public_html/'
+        delete_remote_files: true
+
