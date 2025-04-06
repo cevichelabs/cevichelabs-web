@@ -34,6 +34,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./out/ # Next.js static export directory
+        local-dir: ./build/ # Next.js static export directory
         server-dir: ./public_html/
         dangerous-clean-slate: true # Remove existing files in destination
