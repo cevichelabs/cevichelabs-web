@@ -1,25 +1,39 @@
-on: [push]
-name: Deploy website on push
+name: Deploy to Shared Hosting
+
+# Trigger the workflow on push to main branch
+on:
+  push:
+    branches: [ main ]
+
 jobs:
-  web-deploy:
-    name: cms-wordpress-app
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Get latest code
-        uses: actions/checkout@v3.5.0
+    # Check out the repository
+    - uses: actions/checkout@v3
 
-      - name: Build project
-        run: |
-          yarn install
-          yarn build
-
-      - name: Sync files
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          local_path: build/
-          remote_path: public_html/
-          sftp_only: true
+    # Setup Node.js environment
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    # Install dependencies
+    - name: Install Dependencies
+      run: npm install
+      
+    # Build the Next.js application
+    - name: Build Next.js App
+      run: npm run build
+      
+    # Deploy to shared hosting via FTP
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./out/ # Next.js static export directory
+        server-dir: ./public_html/
+        dangerous-clean-slate: true # Remove existing files in destination
