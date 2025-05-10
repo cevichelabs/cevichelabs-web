@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 import Image from "next/image"
 
@@ -22,8 +21,9 @@ const PorfolioWrapper = styled.nav`
 const PortFolioLink = styled.a`
   color: black;
   text-decoration: none;
-  margin: 0 30px;
   width: 90%;
+  padding: 0 30px;
+  margin: auto;
 `
 
 const PortfolioImage = styled.div`
@@ -31,7 +31,6 @@ const PortfolioImage = styled.div`
   place-items: center;
   width: auto;
   img {
-    width: 75%;
     height: auto;
   }
   @media only screen and (min-width: 768px) {

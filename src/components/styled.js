@@ -81,10 +81,14 @@ export const ParagraphStyled = styled.p`
 
 export const ParagraphContentStyled = styled(ParagraphStyled)`
   font-size: 24px;
-  line-height: 28px;
+  line-height: 2.5rem;
   text-align: center;
   max-width: 870px;
   margin: auto;
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.7rem;
+  }
 `
 
 export const Hero = styled.div`
