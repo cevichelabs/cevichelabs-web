@@ -11,6 +11,7 @@ import bareto from "./../images/portfolio/bareto.svg"
 import readyroofing from "./../images/portfolio/ready-roofing.png"
 import solida from "./../images/portfolio/solida.svg"
 import contintatusan from "./../images/portfolio/contintatusan.png"
+import bigfoot from "./../images/portfolio/bigfoot-funpark.png"
 
 import Layout from "../components/layout"
 import { NextSeo } from "next-seo"
@@ -66,6 +67,14 @@ const Portfolio = [
     description:
       "Roofing contractor offering services such as roof repairs and complete installations",
     image: readyroofing,
+  },
+  {
+    id: 8,
+    label: "Big Foot Fun Park™",
+    url: "https://bigfootfunpark.com/",
+    description:
+      "Fun Parrk offers a variety of attractions all themed around Bigfoot",
+    image: bigfoot,
   },
 ]
 
