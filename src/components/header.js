@@ -149,6 +149,8 @@ const Header = ({ menuLinks }) => {
                 src={Logo}
                 data-src={Logo}
                 alt="CevicheLabs"
+                width={66}
+                height={70}
                 style={{
                   marginBottom: 0,
                 }}
